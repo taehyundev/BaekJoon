@@ -14,3 +14,15 @@
 + Gold 문제정도는 스스로 고민하면서 풀 수 있게끔 하는 것
 + Algorism에 대해서 조금 덜 어렵게 생각할 수 있게 많은 문제를 풀어보는 것
 
+## 배우게 된 Algorithm
+
+* DFS, BFS
+* 정렬
+
+## 부족한 Algorithm
+
+* DP (Dynamic Programing)
+* 플루이드
+* 다익스트라
+* bool을 이용한 sort
+* Operator Overloading 
