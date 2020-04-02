@@ -18,11 +18,13 @@
 
 * DFS, BFS
 * 정렬
+* 유니온파인드
+* 그리디
+
 
 ## 부족한 Algorithm
 
 * DP (Dynamic Programing)
 * 플루이드
 * 다익스트라
-* bool을 이용한 sort
 * Operator Overloading 
