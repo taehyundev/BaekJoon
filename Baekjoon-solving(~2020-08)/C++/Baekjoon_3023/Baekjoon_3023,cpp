@@ -1,0 +1,39 @@
+#include <iostream>
+#include <algorithm>
+#include <string>
+
+using namespace std;
+
+int main() {
+	string part[51];
+	string card[101];
+	int n, n1;
+	cin >> n >> n1;
+	for (int i = 0; i < n; i++) {
+		cin >>part[i];
+	}
+	int error_x, error_y;
+	cin >> error_x >> error_y;
+	error_x = error_x - 1;
+	error_y = error_y - 1;
+	for (int i = 0; i < n; i++) {
+		string temp = part[i];
+		reverse(temp.begin(),temp.end());
+		card[i] = part[i] + temp;
+	}
+
+	for (int i = 0; i < n; i++) {
+		card[n * 2 - 1-i] = card[i];
+	}
+	if (card[error_x][error_y] == '#') {
+		card[error_x][error_y] = '.';
+	}else if (card[error_x][error_y] == '.') {
+		card[error_x][error_y] = '#';
+	}
+
+	for (int i = 0; i < n*2; i++) {
+		cout << card[i];
+		cout << "\n";
+	}
+
+}
